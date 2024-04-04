@@ -30,7 +30,12 @@ myFirstVehicle.toString(); // "The vehicle is a Honda Monster Truck from 1999."
 // Part Two
 // Create a class for a car. The Car class should inherit from Vehicle and each car instance should have a property called numWheels which has a value of 4.
 
-
+class Car extends Vehicle {
+    constructor(make, model, year) {
+        super(make, model, year)
+        this.numWheels = 4;
+    }
+}
 
 let myFirstCar = new Car("Toyota", "Corolla", 2005);
 myFirstCar.toString(); // "The vehicle is a Toyota Corolla from 2005."
